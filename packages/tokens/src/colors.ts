@@ -21,4 +21,5 @@ export const colors = {
   borderInput: '#F1F1F1',
 
   inputDefault: '#FCFCFC',
+  textDefault: '#9D9D9D',
 }
