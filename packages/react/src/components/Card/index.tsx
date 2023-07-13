@@ -1,0 +1,58 @@
+import { ComponentProps } from 'react'
+import { styled } from '../../styles'
+
+export const Card = styled('div', {
+  textAlign: 'center',
+  boxSizing: 'border-box',
+
+  display: 'flex',
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'start',
+  gap: '$4',
+
+  variants: {
+    color: {
+      primary: {
+        backgroundColor: '$white',
+        color: '$secondaryDarkest',
+      },
+      secondary: {
+        backgroundColor: '$primaryLight10',
+        color: '$secondaryDarkest',
+      },
+    },
+
+    bordered: {
+      true: {
+        borderRadius: '$xs',
+        border: '1px solid $borderDefault',
+      },
+    },
+
+    shadow: {
+      true: {
+        boxShadow: '0px 4px 4px 0px rgba(174, 174, 174, 0.25)',
+      },
+    },
+
+    size: {
+      small: {
+        padding: '$2 $4',
+      },
+      medium: {
+        padding: '$6 $4',
+      },
+      large: {
+        padding: '$8 $12',
+      },
+    },
+  },
+
+  defaultVariants: {
+    color: 'primary',
+    bordered: true,
+  },
+})
+
+export type CardProps = ComponentProps<typeof Card>
