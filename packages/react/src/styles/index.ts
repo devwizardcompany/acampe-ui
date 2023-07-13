@@ -1,10 +1,10 @@
 import {
-    colors,
-    fontSizes,
-    fontWeights,
-    fonts,
-    radii,
-    space,
+  colors,
+  fontSizes,
+  fontWeights,
+  fonts,
+  radii,
+  space,
 } from '@acampe-ui/tokens'
 
 import { createStitches, defaultThemeMap } from '@stitches/react'
