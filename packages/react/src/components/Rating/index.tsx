@@ -16,3 +16,5 @@ export function Rating({ numberStars }: RatingProps) {
     </Wrapper>
   )
 }
+
+Rating.displayName = 'Rating'
