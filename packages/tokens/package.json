@@ -1,6 +1,7 @@
 {
   "name": "@acampe-ui/tokens",
-  "version": "1.0.0",
+  "private": false,
+  "version": "1.1.0",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
