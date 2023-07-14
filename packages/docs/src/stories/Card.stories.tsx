@@ -1,11 +1,11 @@
-import { Card, CardProps } from '@acampe-ui/react'
+import { Card, CardProps, Typography } from '@acampe-ui/react'
 import type { Meta, StoryObj } from '@storybook/react'
 
 export default {
   title: 'Form/Card',
   component: Card,
   args: {
-    children: 'Hello world',
+    children: <Typography>Hello Camper!</Typography>,
     color: 'primary',
     size: 'medium',
   },

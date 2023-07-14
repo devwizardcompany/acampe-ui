@@ -4,9 +4,9 @@ import { styled } from '../../styles'
 export const Card = styled('div', {
   textAlign: 'center',
   boxSizing: 'border-box',
+  borderRadius: '$xs',
 
   display: 'flex',
-  flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'start',
   gap: '$4',
@@ -25,7 +25,6 @@ export const Card = styled('div', {
 
     bordered: {
       true: {
-        borderRadius: '$xs',
         border: '1px solid $borderDefault',
       },
     },
@@ -51,7 +50,7 @@ export const Card = styled('div', {
 
   defaultVariants: {
     color: 'primary',
-    bordered: true,
+    size: 'medium',
   },
 })
 
