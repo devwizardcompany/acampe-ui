@@ -21,10 +21,10 @@ export const Wrapper = styled('div', {
   },
 
   'input:hover ~ label': {
-    color: '#ffcc00',
+    color: '$primaryDark',
   },
 
   'input:checked ~ label': {
-    color: '#ffcc00',
+    color: '$primaryDark',
   },
 })
