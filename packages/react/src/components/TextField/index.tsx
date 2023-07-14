@@ -1,5 +1,11 @@
 import { Eye, EyeClosed } from '@phosphor-icons/react'
-import { ComponentProps, ReactNode, useState } from 'react'
+import {
+  ComponentProps,
+  ElementRef,
+  ReactNode,
+  forwardRef,
+  useState,
+} from 'react'
 import { Button, Container, Input, Text, Wrapper } from './styles'
 
 export interface TextFieldProps extends ComponentProps<typeof Input> {
@@ -8,28 +14,33 @@ export interface TextFieldProps extends ComponentProps<typeof Input> {
   password: boolean
 }
 
-export function TextField({ icon, label, password, ...props }: TextFieldProps) {
-  const [hidden, setHidden] = useState<boolean>(true)
+export const TextField = forwardRef<ElementRef<typeof Input>, TextFieldProps>(
+  ({ icon, label, password, ...props }: TextFieldProps, ref) => {
+    const [hidden, setHidden] = useState<boolean>(true)
 
-  return (
-    <Container>
-      {label && <Text htmlFor={props.name}>{label}</Text>}
+    return (
+      <Container>
+        {label && <Text htmlFor={props.name}>{label}</Text>}
 
-      <Wrapper data-icon="true">
-        {icon && icon}
+        <Wrapper data-icon="true">
+          {icon && icon}
 
-        <Input
-          type={password && hidden ? 'password' : 'text'}
-          {...props}
-          id={props.name}
-        />
+          <Input
+            ref={ref}
+            type={password && hidden ? 'password' : 'text'}
+            {...props}
+            id={props.name}
+          />
 
-        {password && (
-          <Button type="button" onClick={() => setHidden((state) => !state)}>
-            {hidden ? <Eye /> : <EyeClosed />}
-          </Button>
-        )}
-      </Wrapper>
-    </Container>
-  )
-}
+          {password && (
+            <Button type="button" onClick={() => setHidden((state) => !state)}>
+              {hidden ? <Eye /> : <EyeClosed />}
+            </Button>
+          )}
+        </Wrapper>
+      </Container>
+    )
+  },
+)
+
+TextField.displayName = 'TextField'
