@@ -79,3 +79,5 @@ export const Typography = styled('p', {
 export interface TypographyProps extends ComponentProps<typeof Typography> {
   as?: ElementType
 }
+
+Typography.displayName = 'Typography'
