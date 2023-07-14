@@ -24,6 +24,8 @@
     "typescript": "~4.8.4"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.10",
+    "@radix-ui/react-checkbox": "^1.0.4",
     "@stitches/react": "^1.2.8"
   }
 }
