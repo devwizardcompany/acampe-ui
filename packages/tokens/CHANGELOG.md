@@ -1,5 +1,11 @@
 # @acampe-ui/tokens
 
+## 1.1.1
+
+### Patch Changes
+
+- add component rating
+
 ## 1.1.0
 
 ### Minor Changes
