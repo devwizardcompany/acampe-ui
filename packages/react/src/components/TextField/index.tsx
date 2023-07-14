@@ -22,7 +22,7 @@ export const TextField = forwardRef<ElementRef<typeof Input>, TextFieldProps>(
       <Container>
         {label && <Text htmlFor={props.name}>{label}</Text>}
 
-        <Wrapper data-icon="true">
+        <Wrapper data-icon={!!icon}>
           {icon && icon}
 
           <Input
