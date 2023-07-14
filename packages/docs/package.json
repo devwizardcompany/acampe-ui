@@ -33,7 +33,6 @@
     "@acampe-ui/tokens": "*",
     "@acampe-ui/ts-config": "*",
     "@storybook/addon-a11y": "^7.0.25",
-    "@storybook/addon-docs": "^7.0.27",
     "phosphor-react": "^1.4.1",
     "polished": "^4.2.2"
   }
