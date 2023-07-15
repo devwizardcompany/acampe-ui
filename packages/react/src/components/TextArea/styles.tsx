@@ -20,31 +20,26 @@ export const Input = styled('textarea', {
   fontWeight: '$regular',
   color: '$secondaryDarkest',
   width: '100%',
+  height: '$20',
   resize: 'none',
 
+  borderRadius: '$xs',
   border: '1px solid $borderInput',
   background: '$white',
   boxSizing: 'border-box',
-  padding: '$5',
+  padding: '$3',
 
   display: 'flex',
   alignItems: 'center',
   gap: '$2',
 
-  '&:has(input:focus)': {
-    borderColor: '$primaryDark',
-  },
-
-  '&:has(input:disabled)': {
-    opacity: 0.5,
-    cursor: 'not-allowed',
-  },
-
   '&:focus': {
+    borderColor: '$primaryDark',
     outline: 'none',
   },
 
   '&:disabled': {
+    opacity: 0.5,
     cursor: 'not-allowed',
   },
 
