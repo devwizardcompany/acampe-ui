@@ -18,6 +18,11 @@ export default {
         type: 'boolean',
       },
     },
+    open: {
+      control: {
+        type: 'boolean',
+      },
+    },
   },
 } as Meta<DialogProps>
 

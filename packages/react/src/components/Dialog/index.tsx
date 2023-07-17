@@ -9,6 +9,7 @@ import {
   Flex,
   IconButton,
 } from './styles'
+import { ReactNode } from 'react'
 
 export interface DialogProps {
   title?: string
@@ -16,7 +17,8 @@ export interface DialogProps {
   labelPrimaryButton?: string
   labelSecondaryButton?: string
   isIconClosed: boolean
-  children?: any
+  children: ReactNode
+  open: boolean
 }
 
 export const Dialog = ({
@@ -26,15 +28,13 @@ export const Dialog = ({
   labelSecondaryButton,
   children,
   isIconClosed,
+  open,
 }: DialogProps) => (
-  <DialogUI.Root>
-    <DialogUI.Trigger asChild>
-      <Button>Edit profile</Button>
-    </DialogUI.Trigger>
+  <DialogUI.Root open={open}>
     <DialogUI.Portal>
       <DialogOverlay />
       <DialogContent>
-        <DialogTitle>{title}</DialogTitle>
+        {!!title && <DialogTitle>{title}</DialogTitle>}
         <DialogDescription>{children}</DialogDescription>
         <Flex
           css={{

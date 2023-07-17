@@ -37,9 +37,10 @@ export const DialogContent = styled(Dialog.Content, {
 
 export const DialogTitle = styled(Dialog.Title, {
   margin: 0,
-  fontWeight: 600,
+  fontWeight: '$semiBold',
   color: '$secondaryDarkest',
   fontSize: '$xl',
+  fontFamily: '$default',
 })
 
 export const DialogDescription = styled(Dialog.Description, {
