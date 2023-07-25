@@ -1,17 +1,25 @@
 # @acampe-ui/react
 
-## 1.1.1
-
-### Patch Changes
-
-- add component rating
-
-## 1.1.0
+## 2.4.0
 
 ### Minor Changes
 
-- add component input
+- publish package
 
-### Patch Changes
+## 2.3.0
 
-- 291368b: add component button
+### Minor Changes
+
+- publish package
+
+## 2.0.0
+
+### Major Changes
+
+- publish package
+
+## 1.0.0
+
+### Major Changes
+
+- publish package

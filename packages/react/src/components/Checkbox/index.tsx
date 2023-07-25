@@ -1,4 +1,4 @@
-import { Check } from '@phosphor-icons/react'
+import { Check } from 'phosphor-react'
 import { ComponentProps } from '@stitches/react'
 import { ElementRef, forwardRef } from 'react'
 import { CheckboxIndicator, CheckboxRoot, Container, Label } from './styles'
