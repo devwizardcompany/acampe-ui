@@ -1,5 +1,5 @@
 import * as DialogUI from '@radix-ui/react-dialog'
-import { X } from '@phosphor-icons/react'
+import { X } from 'phosphor-react'
 import { Button } from '../Button'
 import {
   DialogOverlay,

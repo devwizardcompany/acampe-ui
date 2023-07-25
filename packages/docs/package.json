@@ -1,6 +1,6 @@
 {
   "name": "@acampe-ui/docs",
-  "private": false,
+  "private": true,
   "version": "1.0.1",
   "description": "",
   "main": "index.js",

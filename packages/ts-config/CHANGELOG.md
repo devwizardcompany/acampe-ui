@@ -1,13 +1,25 @@
 # @acampe-ui/ts-config
 
-## 1.0.2
+## 2.2.0
 
-### Patch Changes
+### Minor Changes
 
-- add component rating
+- publish package
 
-## 1.0.1
+## 2.1.0
 
-### Patch Changes
+### Minor Changes
 
-- 291368b: add component button
+- publish package
+
+## 2.0.0
+
+### Major Changes
+
+- publish package
+
+## 1.0.0
+
+### Major Changes
+
+- publish package
