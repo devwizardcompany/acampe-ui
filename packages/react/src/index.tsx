@@ -6,5 +6,5 @@ export * from './components/Rating'
 export * from './components/TextArea'
 export * from './components/TextField'
 export * from './components/Typography'
-export * from './styles'
 
+export * from './styles'
