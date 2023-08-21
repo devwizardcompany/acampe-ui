@@ -16,7 +16,7 @@ const config = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/acampe-ui/'
+      config.base = '/devwizardcompany/'
     }
 
     return config
