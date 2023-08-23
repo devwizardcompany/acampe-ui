@@ -1,0 +1,7 @@
+import{T as n}from"./index-fe1df2ad.js";import"./index-6bd1afc7.js";import"./_commonjsHelpers-de833af9.js";import"./jsx-runtime-e9566d66.js";const d={title:"Data Display/Typography",component:n,tags:["autodocs"],parameters:{layout:"centered"},args:{children:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, suscipit porro! Iusto eius ex recusandae odit libero enim, dolore nam voluptatibus rem at modi? Totam hic tempore amet quibusdam ipsa."},argTypes:{size:{options:["xxs","xs","sm","md","lg","xl","2xl","4xl","5xl","6xl","7xl","8xl","9xl"],control:{type:"select"}},color:{options:["white","black","primaryDark","primaryLight","secondaryDarkest","secondaryDark","secondaryLight","warning","success","background","buttonDisabled","borderDefault","borderInput","inputDefault","textDefault"],control:{type:"select"}},weight:{options:["regular","medium","semiBold","bold"],control:{type:"select"}}}},e={},r={args:{children:"Strong Text",as:"strong"}};var t,o,s;e.parameters={...e.parameters,docs:{...(t=e.parameters)==null?void 0:t.docs,source:{originalSource:"{}",...(s=(o=e.parameters)==null?void 0:o.docs)==null?void 0:s.source}}};var a,i,c;r.parameters={...r.parameters,docs:{...(a=r.parameters)==null?void 0:a.docs,source:{originalSource:`{
+  args: {
+    children: 'Strong Text',
+    as: 'strong'
+  }
+}`,...(c=(i=r.parameters)==null?void 0:i.docs)==null?void 0:c.source}}};const g=["Default","CustomTag"];export{r as CustomTag,e as Default,g as __namedExportsOrder,d as default};
+//# sourceMappingURL=Typography.stories-9cf301fe.js.map
