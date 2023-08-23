@@ -13,7 +13,7 @@ const config = {
   },
   docs: {
     autodocs: "tag",
-    defaultName: 'Documentation',
+    defaultName: 'Docs',
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
