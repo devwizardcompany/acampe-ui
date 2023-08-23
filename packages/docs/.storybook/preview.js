@@ -3,6 +3,9 @@ import { themes } from '@storybook/theming'
 
 const preview = {
   parameters: {
+    parameters: {
+      layout: 'centered',
+    },
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
       matchers: {

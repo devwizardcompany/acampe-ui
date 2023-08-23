@@ -4,6 +4,10 @@ import type { Meta, StoryObj } from '@storybook/react'
 export default {
   title: 'Form/Rating',
   component: Rating,
+  tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
   args: {
     numberStars: 5,
   },

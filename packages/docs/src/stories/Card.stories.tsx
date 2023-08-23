@@ -4,6 +4,10 @@ import type { Meta, StoryObj } from '@storybook/react'
 export default {
   title: 'Form/Card',
   component: Card,
+  tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
   args: {
     children: <Typography>Hello Camper!</Typography>,
     color: 'primary',

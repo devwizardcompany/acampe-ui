@@ -4,6 +4,10 @@ import type { Meta, StoryObj } from '@storybook/react'
 export default {
   title: 'Navigation/Breadcrumbs',
   component: Breadcrumbs,
+  tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
   args: {
     children: (
       <>

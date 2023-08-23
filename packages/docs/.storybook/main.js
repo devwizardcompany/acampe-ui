@@ -13,10 +13,11 @@ const config = {
   },
   docs: {
     autodocs: "tag",
+    defaultName: 'Documentation',
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/devwizardcompany/'
+      config.base = '/devwizardcompany/acampe-ui/'
     }
 
     return config

@@ -4,6 +4,10 @@ import type { Meta, StoryObj } from '@storybook/react'
 export default {
   title: 'Data Display/Dialog',
   component: Dialog,
+  tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
   args: {
     title: 'Dialog Title',
     labelPrimaryButton: 'Save',

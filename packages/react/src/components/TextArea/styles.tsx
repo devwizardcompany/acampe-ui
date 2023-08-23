@@ -12,6 +12,20 @@ export const Text = styled('label', {
   fontWeight: '$medium',
   fontFamily: '$default',
   fontSize: '$xs',
+  color: '$secondaryDarkest',
+
+  '& span': {
+    color: '$warning',
+    fontWeight: '$bold'
+  },
+
+  variants: {
+    error: {
+      true: {
+        color: '$warning',
+      }
+    }
+  }
 })
 
 export const Input = styled('textarea', {
@@ -46,4 +60,23 @@ export const Input = styled('textarea', {
   '&::placeholder': {
     color: '$borderDefault',
   },
+
+  variants: {
+    error: {
+      true: {
+        borderColor: '$warning',
+
+        '&:focus': {
+          borderColor: '$warning',
+        }
+      }
+    }
+  }
+})
+
+export const HelperText = styled('span', {
+  fontFamily: '$default',
+  fontSize: '$xs',
+  fontWeight: '$regular',
+  color: '$warning',
 })

@@ -4,6 +4,10 @@ import type { Meta, StoryObj } from '@storybook/react'
 export default {
   title: 'Data Display/Typography',
   component: Typography,
+  tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
   args: {
     children:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, suscipit porro! Iusto eius ex recusandae odit libero enim, dolore nam voluptatibus rem at modi? Totam hic tempore amet quibusdam ipsa.',
@@ -46,6 +50,17 @@ export default {
         'borderInput',
         'inputDefault',
         'textDefault',
+      ],
+      control: {
+        type: 'select',
+      },
+    },
+    weight: {
+      options: [
+        'regular',
+        'medium',
+        'semiBold',
+        'bold',
       ],
       control: {
         type: 'select',

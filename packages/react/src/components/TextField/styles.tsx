@@ -12,6 +12,20 @@ export const Text = styled('label', {
   fontWeight: '$medium',
   fontFamily: '$default',
   fontSize: '$xs',
+  color: '$secondaryDarkest',
+
+  '& span': {
+    color: '$warning',
+    fontWeight: '$bold'
+  },
+
+  variants: {
+    error: {
+      true: {
+        color: '$warning',
+      }
+    }
+  }
 })
 
 export const Wrapper = styled('div', {
@@ -42,6 +56,18 @@ export const Wrapper = styled('div', {
     width: '$5',
     height: '$5',
   },
+
+  variants: {
+    error: {
+      true: {
+        borderColor: '$warning',
+
+        '&:has(input:focus)': {
+          borderColor: '$warning',
+        }
+      }
+    }
+  }
 })
 
 export const Button = styled('button', {
@@ -75,4 +101,11 @@ export const Input = styled('input', {
   '&::placeholder': {
     color: '$borderDefault',
   },
+})
+
+export const HelperText = styled('span', {
+  fontFamily: '$default',
+  fontSize: '$xs',
+  fontWeight: '$regular',
+  color: '$warning',
 })

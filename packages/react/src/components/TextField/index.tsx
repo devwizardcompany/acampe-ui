@@ -6,23 +6,25 @@ import {
   forwardRef,
   useState,
 } from 'react'
-import { Button, Container, Input, Text, Wrapper } from './styles'
+import { Button, Container, HelperText, Input, Text, Wrapper } from './styles'
 
 export interface TextFieldProps extends ComponentProps<typeof Input> {
   icon?: ReactNode
   label?: string
-  password: boolean
+  password?: boolean
+  error?: string
+  required?: boolean
 }
 
 export const TextField = forwardRef<ElementRef<typeof Input>, TextFieldProps>(
-  ({ icon, label, password, ...props }: TextFieldProps, ref) => {
+  ({ icon, label, password, error, required, ...props }: TextFieldProps, ref) => {
     const [hidden, setHidden] = useState<boolean>(true)
 
     return (
       <Container>
-        {label && <Text htmlFor={props.name}>{label}</Text>}
+        {label && <Text htmlFor={props.name} error={!!error}>{label} {required && <span>*</span>}</Text>}
 
-        <Wrapper data-icon={!!icon}>
+        <Wrapper data-icon={!!icon} error={!!error}>
           {icon && icon}
 
           <Input
@@ -38,6 +40,8 @@ export const TextField = forwardRef<ElementRef<typeof Input>, TextFieldProps>(
             </Button>
           )}
         </Wrapper>
+
+        {error && <HelperText>{error}</HelperText>}
       </Container>
     )
   },

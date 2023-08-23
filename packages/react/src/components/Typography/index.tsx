@@ -69,10 +69,26 @@ export const Typography = styled('p', {
         color: '$textDefault',
       },
     },
+
+    weight: {
+      regular: {
+        fontWeight: '$regular'
+      },
+      medium: {
+        fontWeight: '$medium'
+      },
+      semiBold: {
+        fontWeight: '$semiBold'
+      },
+      bold: {
+        fontWeight: '$bold'
+      },
+    },
   },
 
   defaultVariants: {
     size: 'sm',
+    weight: 'regular',
   },
 })
 
